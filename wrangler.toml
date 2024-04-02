@@ -1,0 +1,15 @@
+name = "prisma-accelerate-workers-d1"
+main = "src/index.ts"
+compatibility_date = "2024-02-23"
+minify = true
+compatibility_flags = [ "nodejs_compat" ]
+
+[placement]
+mode = "smart"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "dfb1cb13fcaf4899a624d03a63946e51"
+
+# [vars]
+# SECRET = "****"
