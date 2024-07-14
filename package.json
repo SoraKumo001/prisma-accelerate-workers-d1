@@ -21,7 +21,7 @@
 		"wrangler": "^3.64.0"
 	},
 	"main": "index.js",
-	"repository": "https://github.com/SoraKumo001/prisma-accelerate-workers",
 	"author": "SoraKumo <info@croud.jp>",
-	"license": "MIT"
+	"license": "MIT",
+	"repository": "https://github.com/SoraKumo001/prisma-accelerate-workers-d1"
 }
