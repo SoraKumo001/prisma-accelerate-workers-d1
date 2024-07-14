@@ -32,6 +32,7 @@
 		// "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
 		// "typeRoots": [],                                  /* Specify multiple folders that act like `./node_modules/@types`. */
 		"types": [
+			"node",
 			"@cloudflare/workers-types/2023-07-01"
 		] /* Specify type package names to be included without being referenced in a source file. */,
 		// "allowUmdGlobalAccess": true,                     /* Allow accessing UMD globals from modules. */
@@ -98,19 +99,6 @@
 
 		/* Completeness */
 		// "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-		"skipLibCheck": true /* Skip type checking all .d.ts files. */,
-		"baseUrl": ".",
-		"paths": {
-			// "assert": ["src/polyfills/assert"],
-			// "buffer": ["src/polyfills/buffer"],
-			// "crypto": ["src/polyfills/crypto"],
-			// "dns": ["src/polyfills/dns"],
-			// "fs": ["src/polyfills/fs"],
-			// "net": ["src/polyfills/net"],
-			// "path": ["src/polyfills/path"],
-			// "stream": ["src/polyfills/stream"],
-			// "tls": ["src/polyfills/tls"],
-			"util": ["src/polyfills/util"]
-		}
+		"skipLibCheck": true /* Skip type checking all .d.ts files. */
 	}
 }

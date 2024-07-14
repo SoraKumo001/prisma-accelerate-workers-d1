@@ -3,6 +3,7 @@ import { PrismaAccelerate, PrismaAccelerateConfig, ResultError } from 'prisma-ac
 import { getPrismaClient } from '@prisma/client/runtime/wasm.js';
 import { PrismaD1 } from '@prisma/adapter-d1';
 
+
 export type Env = {
 	SECRET: string;
 	KV: KVNamespace;
@@ -30,8 +31,8 @@ const getPrismaAccelerate = async ({
 		return prismaAccelerate;
 	}
 	prismaAccelerate = new PrismaAccelerate({
-		singleInstance: true,
 		secret,
+		activeProvider: 'sqlite',
 		adapter: (datasourceUrl) => getAdapter(env[datasourceUrl]),
 		getRuntime: () => require(`@prisma/client/runtime/query_engine_bg.sqlite.js`),
 		getQueryEngineWasmModule: async () => {

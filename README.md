@@ -1,31 +1,8 @@
 # prisma-accelerate-workers
 
-Make D1 database available remotely
+Make Cloudflare D1 database available remotely
 
 ## Required settings on the Cloudflare Workers side.
-
-### fix prisma adapter
-
-Prisma's Adapter calls unnecessary util and needs to be addressed.
-
-- src/polyfills/util.ts
-
-```ts
-export * from 'node:util';
-```
-
-- tsconfig.json
-
-```json
-{
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"util": ["src/polyfills/util"]
-		}
-	}
-}
-```
 
 ### Cloudflare Workers Settings/Environment Variables
 

@@ -11,5 +11,10 @@ mode = "smart"
 binding = "KV"
 id = "dfb1cb13fcaf4899a624d03a63946e51"
 
+[[d1_databases]] 
+binding = "DB"
+database_name = "d1-test"
+database_id = "58087b15-7290-4f30-a5a9-04aa41d15649" 
+
 # [vars]
 # SECRET = "****"
