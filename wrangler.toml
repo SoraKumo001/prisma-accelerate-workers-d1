@@ -1,20 +1,19 @@
 name = "prisma-accelerate-workers-d1"
 main = "src/index.ts"
-compatibility_date = "2024-02-23"
+compatibility_date = "2024-09-23"
 minify = true
 compatibility_flags = [ "nodejs_compat" ]
 
 [placement]
 mode = "smart"
 
-[[kv_namespaces]]
-binding = "KV"
-id = "dfb1cb13fcaf4899a624d03a63946e51"
-
 [[d1_databases]] 
 binding = "DB"
 database_name = "d1-test"
 database_id = "58087b15-7290-4f30-a5a9-04aa41d15649" 
+
+[observability]
+enabled = true
 
 # [vars]
 # SECRET = "****"
