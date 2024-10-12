@@ -12,10 +12,6 @@ wrangler.toml
 minify = true
 compatibility_flags = [ "nodejs_compat" ]
 
-[[kv_namespaces]]
-binding = "KV"
-id = "xxxxxx"
-
 [[d1_databases]]
 binding = "DB"
 database_name = "xxxxx"
